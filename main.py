@@ -61,7 +61,5 @@ for article in articles:
 
 json_data = json.dumps([letak.to_dict() for letak in letaky], indent=4)
 
-print(json_data)
-
 with open("output.json", 'w') as f:
     f.write(json_data)
